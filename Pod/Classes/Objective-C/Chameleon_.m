@@ -660,7 +660,7 @@
         }
     }
     
-    [[UISlider appearance] setMinimumTrackTintColor:primaryColor];
+    //[[UISlider appearance] setMinimumTrackTintColor:primaryColor];
     [[UISlider appearanceWhenContainedIn:[UINavigationBar class], nil] setMinimumTrackTintColor:contentColor];
     [[UISlider appearanceWhenContainedIn:[UIToolbar class], nil] setMinimumTrackTintColor:contentColor];
     [[UISlider appearance] setMaximumTrackTintColor:[UIColor lightGrayColor]];
@@ -674,7 +674,7 @@
 + (void)customizeSliderWithPrimaryColor:(UIColor *)primaryColor
                       andSecondaryColor:(UIColor *)secondaryColor {
     
-    [[UISlider appearance] setMinimumTrackTintColor:secondaryColor];
+    //[[UISlider appearance] setMinimumTrackTintColor:secondaryColor];
     [[UISlider appearanceWhenContainedIn:[UINavigationBar class], nil] setMinimumTrackTintColor:secondaryColor];
     [[UISlider appearanceWhenContainedIn:[UIToolbar class], nil] setMinimumTrackTintColor:secondaryColor];
     [[UISlider appearance] setMaximumTrackTintColor:[UIColor lightGrayColor]];

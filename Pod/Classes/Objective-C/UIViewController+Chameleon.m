@@ -499,15 +499,16 @@
         }
     }
     
-    UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc] init];
-    appearance.backgroundColor = primaryColor;
-    appearance.titleTextAttributes = @{NSForegroundColorAttributeName:contentColor};
-    appearance.shadowImage = [UIImage new];
-    
     [[UINavigationBar appearanceWhenContainedIn:[self class], nil] setBarTintColor:primaryColor];
     [[UINavigationBar appearanceWhenContainedIn:[self class], nil] setTintColor:contentColor];
     [[UINavigationBar appearanceWhenContainedIn:[self class], nil] setTitleTextAttributes:@{NSForegroundColorAttributeName:contentColor}];
     [[UINavigationBar appearanceWhenContainedIn:[self class], nil] setShadowImage:[UIImage new]];
+    
+    
+    UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc] init];
+    appearance.backgroundColor = primaryColor;
+    appearance.titleTextAttributes = @{NSForegroundColorAttributeName:contentColor};
+    appearance.shadowImage = [UIImage new];
     [[UINavigationBar appearance] setStandardAppearance: appearance];
     [[UINavigationBar appearance] setScrollEdgeAppearance: appearance];
 //    [[UINavigationBar appearanceWhenContainedIn:[self class], nil] setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];

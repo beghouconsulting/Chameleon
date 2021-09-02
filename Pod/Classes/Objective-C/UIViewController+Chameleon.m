@@ -504,6 +504,13 @@
     [[UINavigationBar appearanceWhenContainedIn:[self class], nil] setTitleTextAttributes:@{NSForegroundColorAttributeName:contentColor}];
     [[UINavigationBar appearanceWhenContainedIn:[self class], nil] setShadowImage:[UIImage new]];
 //    [[UINavigationBar appearanceWhenContainedIn:[self class], nil] setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    
+    UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc] init];
+    appearance.backgroundColor = primaryColor;
+    appearance.titleTextAttributes = @{NSForegroundColorAttributeName:contentColor};
+    appearance.shadowImage = [UIImage new];
+    [[UINavigationBar appearance] setStandardAppearance: appearance];
+    [[UINavigationBar appearance] setScrollEdgeAppearance: appearance];
 }
 
 + (void)customizeNavigationBarWithBarColor:(UIColor *)barColor

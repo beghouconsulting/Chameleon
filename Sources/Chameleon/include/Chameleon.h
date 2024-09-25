@@ -29,3 +29,5 @@ FOUNDATION_EXPORT const unsigned char ChameleonVersionString[];
 #import "UIColor+Chameleon.h"
 #import "UINavigationController+Chameleon.h"
 #import "UIViewController+Chameleon.h"
+#import "UIApplication+CHSharedApplication.h"
+#import "Chameleon-Bridging-Header.h"
